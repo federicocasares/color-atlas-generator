@@ -79,7 +79,7 @@ form div {
     cursor: help;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltipText {
     font-size: 12px;
     visibility: hidden;
     width: 200px;
@@ -97,7 +97,7 @@ form div {
     transition: opacity 0.3s;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltipText {
     visibility: visible;
     opacity: 1;
 }

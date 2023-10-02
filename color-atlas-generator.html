@@ -12,41 +12,41 @@
     <div id="container">
         <h1>Color Texture Atlas Generator</h1>
         <div id="errorContainer"></div>
-        <form id="settings-form">
+        <form id="settingsForm">
 
             <div>
                 <label for="width">Width (px):</label>
                 <input type="number" id="width" value="512">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Width of the texture atlas in pixels.</span>
+                    <span class="tooltipText">Width of the texture atlas in pixels.</span>
                 </span>
             </div>
             <div>
                 <label for="height">Height (px):</label>
                 <input type="number" id="height" value="256">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Height of the texture atlas in pixels.</span>
+                    <span class="tooltipText">Height of the texture atlas in pixels.</span>
                 </span>
             </div>
             <div>
                 <label for="hueSteps">Hue steps:</label>
                 <input type="number" id="hueSteps" value="6">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Number of different hues that will be used for the atlas.</span>
+                    <span class="tooltipText">Number of different hues that will be used for the atlas.</span>
                 </span>
             </div>
             <div>
                 <label for="hueSteps">Hue offset (&deg;):</label>
                 <input type="number" id="hueOffset" value="-10">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Offset all hues by this amount of degrees.</span>
+                    <span class="tooltipText">Offset all hues by this amount of degrees.</span>
                 </span>
             </div>
             <div>
                 <label for="luminanceSteps">Luminance steps:</label>
                 <input type="number" id="luminanceSteps" value="8">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Number of different luminance values that will be used for the
+                    <span class="tooltipText">Number of different luminance values that will be used for the
                         atlas.</span>
                 </span>
             </div>
@@ -54,7 +54,7 @@
                 <label for="saturations">Saturation (%) values:</label>
                 <input type="text" id="saturations" value="20,85">
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Comma-separated list of saturation % to use for colors of this atlas. A
+                    <span class="tooltipText">Comma-separated list of saturation % to use for colors of this atlas. A
                         whole new column (with hues as sub-columns) will be created for each one.</span>
                 </span>
             </div>
@@ -62,7 +62,7 @@
                 <label for="hueRemap">Hue remapping:</label>
                 <input type="checkbox" id="hueRemap" checked>
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">If checked, hues will not be evenly spaced. Space will be taken away from
+                    <span class="tooltipText">If checked, hues will not be evenly spaced. Space will be taken away from
                         green tones and given to yellow and blue tones, which usually provides, from a human perception
                         point of view, greater variety of colors in the atlas.</span>
                 </span>
@@ -71,7 +71,7 @@
                 <label for="addGrayscale">Add grayscale column:</label>
                 <input type="checkbox" id="addGrayscale" checked>
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">If checked, a column with grayscale shades from black to white will be
+                    <span class="tooltipText">If checked, a column with grayscale shades from black to white will be
                         added as a first column.</span>
                 </span>
             </div>
@@ -84,7 +84,7 @@
                     <option value="both" selected>Both</option>
                 </select>
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">Leave a couple of free pixels between cells to separate colors.</span>
+                    <span class="tooltipText">Leave a couple of free pixels between cells to separate colors.</span>
                 </span>
             </div>
             <div>
@@ -95,7 +95,7 @@
                     <option value="expand grayscale" selected>Expand grayscale</option>
                 </select>
                 <span class="tooltip">[?]
-                    <span class="tooltiptext">What to do if the texture's width or height are not divisible by the
+                    <span class="tooltipText">What to do if the texture's width or height are not divisible by the
                         resulting number of columns (hue steps &times; number of saturation levels) or rows (luminance
                         steps).</span>
                 </span>
